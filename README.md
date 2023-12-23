@@ -1,13 +1,16 @@
 # BRUTEFORCE
 
+*******************************************************************************
 # PYTHON SERVER
 python3 : python3 -m http.server {port} eg: python3 -m http.server 80
 python2 : python -m SimpleHTTPServer {port} eg : python -m SimpleHTTPServer 80
 
+********************************************************************************
 # GOBUSTER SCAN SUBDOMAIN
 goobuster dir -u {url} -w {wordlist path}
 eg :gobuster dir -u google.com -w common.txt
 
+********************************************************************************
 # WIFI HACKING
 
 start monitor mode
@@ -38,3 +41,28 @@ crack password using wordlist
 ------------------------------
 
 aircrack-ng -w [wordlist location] [captured file ".cap"]
+
+****************************************************************************************
+# SCANNING (NMAP)
+------------------
+subnet scan
+------------
+fmt : nmap -sn [ip range]
+eg  : nmap 192.168.1.0/24
+
+tcp scan (with service version)
+-------------------------------
+fmt : nmap -sT -sV [ip address]
+eg  : nmap -sT -sV 192.168.1.18
+
+syn scan (only sending syn packets) [ROOT PRIVILIEGE]
+------------------------------------
+fmt : nmap -sS [ipaddress]
+eg  : nmap -sS 192.168.1.18
+
+udp scan [ROOT PRIVILIEGE]
+---------------------------
+fmt : nmap -sU [ipaddress]
+eg  : nmap -sU 192.168.1.18
+
+
