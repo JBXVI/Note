@@ -1,6 +1,14 @@
 ENUMERATION
 -----------
-1. host [domain]
-2. nslookup [domain]
-3. whois [domain]
-4. whatweb [ip address], aggression : whatweb --aggression 3 -v [ip address]
+1. host [domain] >>  [get details]
+2. nslookup [domain] >> [get details]
+3. whois [domain]  >> [get details]
+4. whatweb [ip address] >>  aggression [get details]
+5. whatweb --aggression 3 -v [ip address] >> [get details]
+
+6. dirb "[full domain name]" >> [get availbale paths] [with default wordlist]
+7. dirb "[full domain name]" [wordlist path] >> [with custom wordlist] [get available path]
+8. nmap -sV [ip address]  >> [get detailed information]
+9. nmap -script vuln [ip address] >>  [scan for vulnerabilities]
+10. nikto -host [ip address] >> 
+
