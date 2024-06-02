@@ -1,0 +1,6 @@
+ENUMERATION
+-----------
+1. host [domain]
+2. nslookup [domain]
+3. whois [domain]
+4. whatweb [ip address], aggression : whatweb --aggression 3 -v [ip address]
